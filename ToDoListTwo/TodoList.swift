@@ -17,6 +17,12 @@ class TodoList {
         self.title = title
         self.todos = todos
     }
+    
+    func appendTodo(todoitem: TodoItem) {
+        
+        todos.append(todoitem)
+        
+    }
 
 }
 

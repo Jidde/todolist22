@@ -701,6 +701,7 @@
 				ACAF5F5F1CE3511100365E2F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		ACAF5F601CE3511100365E2F /* Build configuration list for PBXNativeTarget "ToDoListTwoTests" */ = {
 			isa = XCConfigurationList;
@@ -709,6 +710,7 @@
 				ACAF5F621CE3511100365E2F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		ACAF5F631CE3511100365E2F /* Build configuration list for PBXNativeTarget "ToDoListTwoUITests" */ = {
 			isa = XCConfigurationList;
@@ -717,6 +719,7 @@
 				ACAF5F651CE3511100365E2F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

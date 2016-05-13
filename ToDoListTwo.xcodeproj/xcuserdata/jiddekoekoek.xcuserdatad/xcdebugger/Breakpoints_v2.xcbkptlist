@@ -19,5 +19,53 @@
             landmarkType = "3">
          </BreakpointContent>
       </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ToDoListTwo/TodoItem.swift"
+            timestampString = "484834126.494022"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "11"
+            endingLineNumber = "11"
+            landmarkName = "TodoItem"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ToDoListTwo.TodoItem.__deallocating_deinit"
+                  moduleName = "ToDoListTwo"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jiddekoekoek/Documents/Xcode/ToDoListTwo/ToDoListTwo/TodoItem.swift"
+                  timestampString = "484834130.004347"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "4">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ToDoListTwo.TodoItem.deinit"
+                  moduleName = "ToDoListTwo"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jiddekoekoek/Documents/Xcode/ToDoListTwo/ToDoListTwo/TodoItem.swift"
+                  timestampString = "484834130.077468"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "4">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
    </Breakpoints>
 </Bucket>
