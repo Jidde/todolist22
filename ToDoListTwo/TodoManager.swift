@@ -59,7 +59,7 @@ class TodoManager {
         
     }
     
-    func readTodo () -> TodoList{
+    func readTodo () -> TodoList?{
         
         var list = TodoList?()
         
@@ -77,7 +77,7 @@ class TodoManager {
                 print("Could not retrieve data from database: \(error)")
             }
         }
-        return list!
+        return list
     }
 
 //    func writeTodo (title: String, completed: Bool, picture: String, duration: Int, backgroundColor: String, inProgress: Bool, description: String, rowNumber: Int) {
@@ -93,6 +93,7 @@ class TodoManager {
 //    }
 
 }
+
 
 
 

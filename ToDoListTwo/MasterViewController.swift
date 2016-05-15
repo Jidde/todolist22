@@ -40,7 +40,10 @@ class MasterViewController: UITableViewController {
     override func viewWillAppear(animated: Bool) {
         self.clearsSelectionOnViewWillAppear = self.splitViewController!.collapsed
         super.viewWillAppear(animated)
-        objects = [TodoManager.sharedInstance.readTodo()]
+        
+        if TodoManager.sharedInstance.readTodo() != nil {
+            objects = [TodoManager.sharedInstance.readTodo()!]
+        }
     }
 
     override func didReceiveMemoryWarning() {
@@ -51,7 +54,7 @@ class MasterViewController: UITableViewController {
     func insertNewObject(sender: AnyObject) {
         
         var item = TodoManager.sharedInstance.readTodo()
-        
+
         
         objects.insert(NSDate(), atIndex: 0)
         let indexPath = NSIndexPath(forRow: 0, inSection: 0)
