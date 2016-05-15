@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AC04D7D31CE61AAB0026BF82 /* TodoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC04D7D21CE61AAB0026BF82 /* TodoViewController.swift */; };
 		ACAF5F371CE3511100365E2F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACAF5F361CE3511100365E2F /* AppDelegate.swift */; };
 		ACAF5F391CE3511100365E2F /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACAF5F381CE3511100365E2F /* MasterViewController.swift */; };
 		ACAF5F3B1CE3511100365E2F /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACAF5F3A1CE3511100365E2F /* DetailViewController.swift */; };
@@ -129,6 +130,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		AC04D7D21CE61AAB0026BF82 /* TodoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TodoViewController.swift; path = ../TodoViewController.swift; sourceTree = "<group>"; };
 		ACAF5F331CE3511100365E2F /* ToDoListTwo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ToDoListTwo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACAF5F361CE3511100365E2F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ACAF5F381CE3511100365E2F /* MasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
@@ -243,6 +245,7 @@
 				ACAF5F361CE3511100365E2F /* AppDelegate.swift */,
 				ACAF5F381CE3511100365E2F /* MasterViewController.swift */,
 				ACAF5F3A1CE3511100365E2F /* DetailViewController.swift */,
+				AC04D7D21CE61AAB0026BF82 /* TodoViewController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -459,6 +462,7 @@
 			files = (
 				ACAF5FC81CE3731F00365E2F /* TodoManager.swift in Sources */,
 				ACAF5F3B1CE3511100365E2F /* DetailViewController.swift in Sources */,
+				AC04D7D31CE61AAB0026BF82 /* TodoViewController.swift in Sources */,
 				ACAF5F391CE3511100365E2F /* MasterViewController.swift in Sources */,
 				ACAF5F371CE3511100365E2F /* AppDelegate.swift in Sources */,
 				ACAF5FCA1CE3733800365E2F /* TodoItem.swift in Sources */,

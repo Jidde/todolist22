@@ -21,8 +21,19 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UISplitViewControllerDele
         navigationController.topViewController!.navigationItem.leftBarButtonItem = splitViewController.displayModeButtonItem()
         splitViewController.delegate = self
         
-        TodoManager.sharedInstance.createTable()
         
+        TodoManager.sharedInstance.connectToDatabase()
+        TodoManager.sharedInstance.createTable()
+
+        
+        return true
+    }
+    
+    func application(application: UIApplication, shouldSaveApplicationState coder: NSCoder) -> Bool {
+        return true
+    }
+    
+    func application(application: UIApplication, shouldRestoreApplicationState coder: NSCoder) -> Bool {
         return true
     }
 

@@ -7,7 +7,7 @@
 //
 
 import UIKit
-//import SQLite
+import SQLite
 
 class MasterViewController: UITableViewController {
 
@@ -20,15 +20,21 @@ class MasterViewController: UITableViewController {
         // Do any additional setup after loading the view, typically from a nib.
         self.navigationItem.leftBarButtonItem = self.editButtonItem()
 
-        let addButton = UIBarButtonItem(barButtonSystemItem: .Add, target: self, action: #selector(insertNewObject(_:)))
+        let addButton = UIBarButtonItem(barButtonSystemItem: .Add, target: self, action: "addButton") //#selector(insertNewObject(_:)))
+        
         self.navigationItem.rightBarButtonItem = addButton
+        
         if let split = self.splitViewController {
             let controllers = split.viewControllers
             self.detailViewController = (controllers[controllers.count-1] as! UINavigationController).topViewController as? DetailViewController
             
-            TodoManager.sharedInstance.connectToDatabase()
+        TodoManager.sharedInstance.connectToDatabase()
             
         }
+    }
+    
+    func addButton (sender: UIBarButtonItem) {
+        performSegueWithIdentifier("addTodo", sender: self)
     }
 
     override func viewWillAppear(animated: Bool) {

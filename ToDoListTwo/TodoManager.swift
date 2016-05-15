@@ -19,7 +19,6 @@ class TodoManager {
     private let toDo = Table("ToDo")
     private let id = Expression<Int64>("id")
     private let title = Expression<String?>("title")
-    
     private let completed = Expression<Bool?>("completed")
     private let picture = Expression<String?>("picture")
     private let duration = Expression<Int?>("duration")
@@ -78,11 +77,17 @@ class TodoManager {
         }
     }
 
-    func writeTodo (ti: String, to: TodoItem) {
-        
-        
-        
-    }
+//    func writeTodo (title: String, completed: Bool, picture: String, duration: Int, backgroundColor: String, inProgress: Bool, description: String, rowNumber: Int) {
+//        
+//        let insert = toDo.insert(title <- title, completed <- completed, picture <- picture, duration <- duration, backgroundColor <- backgroundColor, description <- description, rowNumber <- rowNumber)
+//        do {
+//            let rowID = try database!.run(insert)
+//            print (rowID)
+//        } catch {
+//            print("Error creating to do: \(error)")
+//        }
+//        
+//    }
 
 }
 
