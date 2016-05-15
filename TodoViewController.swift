@@ -25,7 +25,8 @@ class TodoViewController: UIViewController {
     
     @IBAction func saveTodo(sender: AnyObject) {
         
-        TodoManager.sharedInstance.writeTodo(titleField.text!, complete: false, pic: "", dura: 1, backgr: "", progress: true, desc: "", row: 0)
+        TodoManager.sharedInstance.connectToDatabase()
+        let save = TodoManager.sharedInstance.writeTodo(titleField.text!, complete: false, pic: "", dura: 1, backgr: "", progress: true, desc: "", row: 0)
         
         dismissViewControllerAnimated(true, completion: nil)
     }

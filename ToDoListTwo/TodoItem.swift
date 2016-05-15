@@ -30,4 +30,8 @@ class TodoItem {
         self.description = description
         self.rowNumber = rowNumber
     }
+    
+    func returnTitle () ->  String {        
+        return title
+    }
 }

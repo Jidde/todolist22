@@ -153,10 +153,9 @@
                             <constraint firstItem="Ow7-dg-bQd" firstAttribute="top" secondItem="ZHV-w2-UYY" secondAttribute="bottom" constant="41" id="1PN-Kb-Sy8"/>
                             <constraint firstItem="ZHV-w2-UYY" firstAttribute="top" secondItem="gbM-pX-e6S" secondAttribute="bottom" constant="8" id="5ii-id-B6c"/>
                             <constraint firstItem="Ow7-dg-bQd" firstAttribute="leading" secondItem="Sqh-B3-spt" secondAttribute="leading" constant="101" id="64Q-Hx-FJB"/>
+                            <constraint firstItem="ZHV-w2-UYY" firstAttribute="centerX" secondItem="Ow7-dg-bQd" secondAttribute="centerX" id="Hyv-xj-drH"/>
                             <constraint firstItem="UNe-Zo-kHd" firstAttribute="top" secondItem="Ow7-dg-bQd" secondAttribute="bottom" constant="35" id="WZO-q7-H30"/>
                             <constraint firstAttribute="trailing" secondItem="Ow7-dg-bQd" secondAttribute="trailing" constant="100" id="sOa-do-fGY"/>
-                            <constraint firstItem="Ow7-dg-bQd" firstAttribute="centerX" secondItem="Sqh-B3-spt" secondAttribute="centerX" id="voh-K4-dmI"/>
-                            <constraint firstItem="ZHV-w2-UYY" firstAttribute="centerX" secondItem="Sqh-B3-spt" secondAttribute="centerX" id="x1r-U9-Ayd"/>
                             <constraint firstItem="UNe-Zo-kHd" firstAttribute="centerX" secondItem="Sqh-B3-spt" secondAttribute="centerX" id="yrZ-L2-UyK"/>
                         </constraints>
                     </view>
