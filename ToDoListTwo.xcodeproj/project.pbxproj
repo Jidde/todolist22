@@ -10,6 +10,7 @@
 		AC04D7D31CE61AAB0026BF82 /* TodoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC04D7D21CE61AAB0026BF82 /* TodoViewController.swift */; };
 		AC75509B1CE8CF640076ED21 /* SQLiteTests iOS.xctest in Embed PlugIns */ = {isa = PBXBuildFile; fileRef = AC7550901CE8CD6A0076ED21 /* SQLiteTests iOS.xctest */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		AC75509F1CE8CF690076ED21 /* SQLite.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC75508E1CE8CD6A0076ED21 /* SQLite.framework */; };
+		AC7550A11CE91F960076ED21 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = AC7550A01CE91F960076ED21 /* README.md */; };
 		ACAF5F371CE3511100365E2F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACAF5F361CE3511100365E2F /* AppDelegate.swift */; };
 		ACAF5F391CE3511100365E2F /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACAF5F381CE3511100365E2F /* MasterViewController.swift */; };
 		ACAF5F3B1CE3511100365E2F /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACAF5F3A1CE3511100365E2F /* DetailViewController.swift */; };
@@ -113,6 +114,7 @@
 /* Begin PBXFileReference section */
 		AC04D7D21CE61AAB0026BF82 /* TodoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TodoViewController.swift; path = ../TodoViewController.swift; sourceTree = "<group>"; };
 		AC7550831CE8CD6A0076ED21 /* SQLite.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SQLite.xcodeproj; path = "SQLite.swift-master/SQLite.xcodeproj"; sourceTree = SOURCE_ROOT; };
+		AC7550A01CE91F960076ED21 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		ACAF5F331CE3511100365E2F /* ToDoListTwo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ToDoListTwo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACAF5F361CE3511100365E2F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ACAF5F381CE3511100365E2F /* MasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
@@ -199,6 +201,7 @@
 				ACAF5F661CE3519100365E2F /* Model */,
 				ACAF5F681CE351A700365E2F /* Controller */,
 				ACAF5F3C1CE3511100365E2F /* Main.storyboard */,
+				AC7550A01CE91F960076ED21 /* README.md */,
 				ACAF5F3F1CE3511100365E2F /* Assets.xcassets */,
 				ACAF5F411CE3511100365E2F /* LaunchScreen.storyboard */,
 				ACAF5F441CE3511100365E2F /* Info.plist */,
@@ -445,6 +448,7 @@
 				ACAF5F391CE3511100365E2F /* MasterViewController.swift in Sources */,
 				ACAF5F371CE3511100365E2F /* AppDelegate.swift in Sources */,
 				ACAF5FCA1CE3733800365E2F /* TodoItem.swift in Sources */,
+				AC7550A11CE91F960076ED21 /* README.md in Sources */,
 				ACAF5FA41CE358CF00365E2F /* TodoList.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

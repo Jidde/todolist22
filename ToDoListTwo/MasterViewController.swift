@@ -40,9 +40,9 @@ class MasterViewController: UITableViewController {
         
         TodoManager.sharedInstance.connectToDatabase()
         
-        if TodoManager.sharedInstance.readTodo() != nil {
-            objects = [TodoManager.sharedInstance.readTodo()!]
-        }
+//        if TodoManager.sharedInstance.readTodo() != nil {
+//            objects = [TodoManager.sharedInstance.readTodo()!]
+//        }
     }
 
     override func didReceiveMemoryWarning() {
@@ -52,8 +52,8 @@ class MasterViewController: UITableViewController {
 
     func insertNewObject(sender: AnyObject) {
         
-        var item = TodoManager.sharedInstance.readTodo()
-        item?.returntodo()
+//        var item = TodoManager.sharedInstance.readTodo()
+//        item?.returntodo()
         
         objects.insert(NSDate(), atIndex: 0)
         let indexPath = NSIndexPath(forRow: 0, inSection: 0)

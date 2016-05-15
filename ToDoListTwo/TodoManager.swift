@@ -59,28 +59,24 @@ class TodoManager {
         
     }
     
-    func readTodo () -> TodoList?{
-        
-        var list = TodoList?()
-        
-        if database != nil {
-            
-            do {
-                for todo in try database!.prepare(toDo)  {
-                    
-//                    toDo.filter(title != nil, completed != nil, completed != nil, picture != nil, duration != nil, backgroundColor != nil, inProgress != nil, description != nil, rowNumber != nil)
-                    
-                    let item = TodoItem.init(title: todo[title]!, completed: todo[completed]!, picture: todo[picture]!, duration: todo[duration]!, backgroundColor: todo[backgroundColor]!, inProgress: todo[inProgress]!, description: todo[description]!, rowNumber: todo[rowNumber]!)
-
-                    list = TodoList.init(title: todo[title]!, todos: [item])
-                    list!.appendTodo(item)
-                }
-            } catch {
-                print("Could not retrieve data from database: \(error)")
-            }
-        }
-        return list
-    }
+//    func readTodo () -> TodoList?{
+//        
+//        var list = TodoList?()
+//        
+//        if database != nil {
+//            do {
+//                for todo in try database!.prepare(toDo)  {
+////                    toDo.filter(title != nil, completed != nil, completed != nil, picture != nil, duration != nil, backgroundColor != nil, inProgress != nil, description != nil, rowNumber != nil)
+//                    let item = TodoItem.init(title: todo[title]!, completed: todo[completed]!, picture: todo[picture]!, duration: todo[duration]!, backgroundColor: todo[backgroundColor]!, inProgress: todo[inProgress]!, description: todo[description]!, rowNumber: todo[rowNumber]!)
+//                    list = TodoList.init(title: todo[title]!, todos: [item])
+//                    list!.appendTodo(item)
+//                }
+//            } catch {
+//                print("Could not retrieve data from database: \(error)")
+//            }
+//        }
+//        return list
+//    }
 
     func writeTodo (titel: String, complete: Bool, pic: String, dura: Int, backgr: String, progress: Bool, desc: String, row: Int) {
         
