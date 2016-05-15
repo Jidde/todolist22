@@ -66,10 +66,12 @@ class TodoManager {
         if database != nil {
             
             do {
-                for todo in try database!.prepare(toDo) {
+                for todo in try database!.prepare(toDo)  {
+                    
+//                    toDo.filter(title != nil, completed != nil, completed != nil, picture != nil, duration != nil, backgroundColor != nil, inProgress != nil, description != nil, rowNumber != nil)
                     
                     let item = TodoItem.init(title: todo[title]!, completed: todo[completed]!, picture: todo[picture]!, duration: todo[duration]!, backgroundColor: todo[backgroundColor]!, inProgress: todo[inProgress]!, description: todo[description]!, rowNumber: todo[rowNumber]!)
-                    
+
                     list = TodoList.init(title: todo[title]!, todos: [item])
                     list!.appendTodo(item)
                 }
@@ -80,17 +82,17 @@ class TodoManager {
         return list
     }
 
-//    func writeTodo (title: String, completed: Bool, picture: String, duration: Int, backgroundColor: String, inProgress: Bool, description: String, rowNumber: Int) {
-//        
-//        let insert = toDo.insert(title <- title, completed <- completed, picture <- picture, duration <- duration, backgroundColor <- backgroundColor, description <- description, rowNumber <- rowNumber)
-//        do {
-//            let rowID = try database!.run(insert)
-//            print (rowID)
-//        } catch {
-//            print("Error creating to do: \(error)")
-//        }
-//        
-//    }
+    func writeTodo (titel: String, complete: Bool, pic: String, dura: Int, backgr: String, progress: Bool, desc: String, row: Int) {
+        
+        let insert = toDo.insert(title <- titel, completed <- complete, picture <- pic, duration <- dura, backgroundColor <- backgr, description <- desc, rowNumber <- row)
+        do {
+            let rowID = try database!.run(insert)
+            print (rowID)
+        } catch {
+            print("Error creating to do: \(error)")
+        }
+        
+    }
 
 }
 

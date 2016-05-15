@@ -25,7 +25,7 @@ class TodoViewController: UIViewController {
     
     @IBAction func saveTodo(sender: AnyObject) {
         
-//        TodoManager.sharedInstance.writeTodo(titleField.text!, completed: false, picture: "", duration: 1, backgroundColor: "", inProgress: true, description: "", rowNumber: 0)
+        TodoManager.sharedInstance.writeTodo(titleField.text!, complete: false, pic: "", dura: 1, backgr: "", progress: true, desc: "", row: 0)
         
         dismissViewControllerAnimated(true, completion: nil)
     }
