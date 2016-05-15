@@ -19,11 +19,17 @@ class TodoList {
     }
     
     func appendTodo(todoitem: TodoItem) {
-        
         todos.append(todoitem)
-        
     }
-
+    
+    func returntodo () -> String{
+        return title!
+    }
+    
+    func count () -> Int {
+        print (todos.count)
+        return todos.count
+    }
 }
 
 

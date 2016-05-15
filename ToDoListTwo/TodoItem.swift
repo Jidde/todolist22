@@ -10,16 +10,16 @@ import Foundation
 
 class TodoItem {
     
-    private var title: String?
-    private var completed: Bool?
-    private var picture: String?
-    private var duration: Int?
-    private var backgroundColor: String?
-    private var inProgress: Bool?
-    private var description: String?
-    private var rowNumber: Int?
+    private var title: String
+    private var completed: Bool
+    private var picture: String
+    private var duration: Int
+    private var backgroundColor: String
+    private var inProgress: Bool
+    private var description: String
+    private var rowNumber: Int
     
-    init (title: String, completed: Bool, picture: String, duration: Int, backgroundColor: String, inProgress: Bool, description: String, rowNumber: Int?) {
+    init (title: String, completed: Bool, picture: String, duration: Int, backgroundColor: String, inProgress: Bool, description: String, rowNumber: Int) {
         
         self.title = title
         self.completed = completed
@@ -29,6 +29,5 @@ class TodoItem {
         self.inProgress = inProgress
         self.description = description
         self.rowNumber = rowNumber
-        
     }
 }

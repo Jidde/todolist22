@@ -20,7 +20,7 @@ class MasterViewController: UITableViewController {
         // Do any additional setup after loading the view, typically from a nib.
         self.navigationItem.leftBarButtonItem = self.editButtonItem()
 
-        let addButton = UIBarButtonItem(barButtonSystemItem: .Add, target: self, action: "addButton") //#selector(insertNewObject(_:)))
+        let addButton = UIBarButtonItem(barButtonSystemItem: .Add, target: self, action: #selector(insertNewObject(_:)))
         
         self.navigationItem.rightBarButtonItem = addButton
         
@@ -40,6 +40,7 @@ class MasterViewController: UITableViewController {
     override func viewWillAppear(animated: Bool) {
         self.clearsSelectionOnViewWillAppear = self.splitViewController!.collapsed
         super.viewWillAppear(animated)
+        objects = [TodoManager.sharedInstance.readTodo()]
     }
 
     override func didReceiveMemoryWarning() {
@@ -48,11 +49,21 @@ class MasterViewController: UITableViewController {
     }
 
     func insertNewObject(sender: AnyObject) {
+        
+        var item = TodoManager.sharedInstance.readTodo()
+        
+        
         objects.insert(NSDate(), atIndex: 0)
         let indexPath = NSIndexPath(forRow: 0, inSection: 0)
         self.tableView.insertRowsAtIndexPaths([indexPath], withRowAnimation: .Automatic)
+        
     }
 
+    
+    
+    
+    
+    
     // MARK: - Segues
 
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
@@ -68,6 +79,22 @@ class MasterViewController: UITableViewController {
     }
 
     // MARK: - Table View
+    
+//    override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+//        let list = TodoManager.sharedInstance.readTodo()
+//        return list.count()
+//    }
+//    
+//    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+//        let cell = tableView.dequeueReusableCellWithIdentifier("Cell") as UITableViewCell!
+//        
+//        let list = TodoManager.sharedInstance.readTodo()
+//
+//        cell?.textLabel!.text = list.returntodo()
+//
+//        
+//        return cell!
+//    }
 
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         return 1
@@ -96,6 +123,7 @@ class MasterViewController: UITableViewController {
             tableView.deleteRowsAtIndexPaths([indexPath], withRowAnimation: .Fade)
         } else if editingStyle == .Insert {
             // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view.
+            // Todomanager.sharedInstance.writeTodo()
         }
     }
 

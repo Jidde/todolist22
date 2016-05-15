@@ -59,22 +59,25 @@ class TodoManager {
         
     }
     
-    func readTodo () {
+    func readTodo () -> TodoList{
+        
+        var list = TodoList?()
         
         if database != nil {
+            
             do {
-
                 for todo in try database!.prepare(toDo) {
                     
-                    let item = TodoItem.init(title: todo[title]!, completed: todo[completed]!, picture: todo[picture]!, duration: todo[duration]!, backgroundColor: todo[backgroundColor]!, inProgress: todo[inProgress]!, description: todo[description]!, rowNumber: todo[rowNumber])
+                    let item = TodoItem.init(title: todo[title]!, completed: todo[completed]!, picture: todo[picture]!, duration: todo[duration]!, backgroundColor: todo[backgroundColor]!, inProgress: todo[inProgress]!, description: todo[description]!, rowNumber: todo[rowNumber]!)
                     
-                    let list = TodoList.init(title: todo[title]!, todos: [item])
-                    list.appendTodo(item)
+                    list = TodoList.init(title: todo[title]!, todos: [item])
+                    list!.appendTodo(item)
                 }
             } catch {
                 print("Could not retrieve data from database: \(error)")
             }
         }
+        return list!
     }
 
 //    func writeTodo (title: String, completed: Bool, picture: String, duration: Int, backgroundColor: String, inProgress: Bool, description: String, rowNumber: Int) {

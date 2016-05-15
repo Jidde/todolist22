@@ -24,7 +24,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UISplitViewControllerDele
         
         TodoManager.sharedInstance.connectToDatabase()
         TodoManager.sharedInstance.createTable()
-
         
         return true
     }
